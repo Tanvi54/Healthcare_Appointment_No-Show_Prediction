@@ -14,10 +14,10 @@ The aim is to:
 
 ## 🔄 Project Workflow  
 
-1. **Data Preprocessing** – Cleaning missing values, handling categorical features, creating new features (waiting days, weekdays).  
+1. **Data Preprocessing** – Cleaning missing values, handling categorical features, creating new features (waiting days, weekdays). 
 2. **Feature Engineering** – Encoded categorical columns (Gender, Neighborhood).  
 3. **Handling Imbalance** – Applied **SMOTE** to balance No-Show vs Show classes.  
-4. **Model Training** – Decision Tree Classifier.  
+4. **Model Training** – Used a Decision Tree Classifier  
 5. **Prediction Interface** – Built using **Streamlit** (single & multiple patient predictions).  
 6. **Visualization** – Power BI dashboard for healthcare insights.  
 
@@ -114,6 +114,12 @@ Customize with hospital theme color palette
 
 
 ## 📊 Results & Insights
+
+- Model Used → Decision Tree Classifier 🌳
+
+- Achieved Accuracy → 0.696 (~70%)
+
+- Balanced using SMOTE for fair prediction of Show vs NoShow
 
 - Key metrics analyzed in Power BI:
 
