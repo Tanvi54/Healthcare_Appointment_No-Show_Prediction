@@ -7,6 +7,7 @@ from imblearn.over_sampling import SMOTE
 from sklearn.preprocessing import LabelEncoder
 import os
 import pickle
+from sklearn.metrics import classification_report, accuracy_score
 
 def train_and_predict():
     print("📂 Loading processed data...")
@@ -64,6 +65,13 @@ def train_and_predict():
 
     # Predictions
     y_pred = clf.predict(X_test)
+
+    # ✅ Evaluate model
+    print("\n📊 Model Performance:")
+    print("Accuracy:", accuracy_score(y_test, y_pred))
+    print("\nClassification Report:\n", classification_report(y_test, y_pred))
+
+
 
     # -----------------------
     # ✅ Create Power BI file with original labels
