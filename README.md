@@ -61,74 +61,62 @@ Healthcare_Appointment_NoShow_Prediction/
 ---
 
 ## 🚀 How to Run
-1️⃣ Clone the Repository using git clone
+1️⃣ Clone the Repository: 
+
+git clone https://github.com/yourusername/Healthcare_Appointment_NoShow_Prediction.git
 
 cd Healthcare_Appointment_NoShow_Prediction
 
-2️⃣ Install Dependencies
+2️⃣ Install Dependencies:
 
 pip install -r requirements.txt
 
-3️⃣ Train the Model
+3️⃣ Train the Model:
 
 python src/train_model.py
 
-This will:
 
-Clean & encode data
+✔️ This will:
+- Clean & encode data
+- Handle imbalance using SMOTE
+- Train a Decision Tree model
+- Save model & encoders in data/model/
+- Generate predictions in data/processed/test_with_predictions.csv
 
-Handle imbalance using SMOTE
-
-Train a Decision Tree model
-
-Save model & encoders in data/model/
-
-Generate predictions in data/processed/test_with_predictions.csv
-
-4️⃣ Run Streamlit App
+4️⃣ Run Streamlit App:
 
 streamlit run src/predict.py
 
-Enter patient details (single/multiple records)
-
-Get real-time prediction → Show / NoShow
+🧍 Enter single patient details or upload multiple records
+-  Get real-time prediction → Show / NoShow
 
 5️⃣ Power BI Dashboard
-Import data/processed/test_with_predictions.csv into Power BI
-
-Use prebuilt visuals (Show vs NoShow, Gender breakdown, Waiting Days impact, etc.)
-
-Customize with hospital theme color palette
+- Import data/processed/test_with_predictions.csv into Power BI
+- Use prebuilt visuals:
+- Show vs NoShow ratio
+- Gender breakdown
+- Waiting Days impact
+- Customize with hospital theme color palette
 
 ---
 
 ## ▶️ Usage
 
 - Single Prediction: Enter patient details in Streamlit UI.
-
 - Batch Prediction: Input multiple patients in a table form.
-
 - Dashboard: Import test_with_predictions.csv into Power BI and explore insights.
 
 ---
 
 
 ## 📊 Results & Insights
-
 - Model Used → Decision Tree Classifier 🌳
-
 - Achieved Accuracy → 0.696 (~70%)
-
 - Balanced using SMOTE for fair prediction of Show vs NoShow
-
 - Key metrics analyzed in Power BI:
-
 - Show vs No-Show ratio
-
 - Gender & Neighborhood analysis
-
 - Average waiting days distribution
-
 - Accuracy of ML predictions
 
 ---
