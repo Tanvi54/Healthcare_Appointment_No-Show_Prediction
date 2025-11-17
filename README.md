@@ -121,6 +121,13 @@ streamlit run src/predict.py
 
 ---
 
+## 📊 Dashboard Preview
+
+<p align="center">
+  <img src="Dashboard.png" alt="Healthcare_Appointment_No-Show_Prediction\Dashboard.png" width="800"/>
+</p>
+
+
 ## 🏁 Conclusion
 
 This project demonstrates how data science and visualization can assist hospitals in predicting appointment no-shows.
